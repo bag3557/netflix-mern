@@ -8,7 +8,7 @@ const UserSchema = new mongoose.Schema(
     profilePic: { type: String, default: "" },
     isAdmin: { type: Boolean, default: false },
   },
-  { timestamp: true }
+  { timestamps: true }
 );
 
-module.export = mongoose.model("User", UserSchema);
+module.exports = mongoose.model("User", UserSchema);
